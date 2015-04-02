@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<factory>
+	<usedformats>
+		<format name="json"/>
+	</usedformats>
+	<package package="com.tv.xeeng" name="PackageProtocol" module="" msgpkg="com.tv.xeeng.base" description="Bussiness messages">
+    
+		<message mid="1" name="KeepConnection" needloggedin="false"/>
+		<message mid="3" name="Reconnect" needloggedin="false"/>
+		<message mid="57" name="GetListEvent" dbflag="2"/>
+		<message mid="58" name="GetEventDetail" dbflag="2"/>                
+
+		<message mid="1000" name="Login" needloggedin="false"/>
+		<message mid="1001" name="GuestLogin" needloggedin="false"/>
+		<message mid="1100" name="New" dbflag="2"/> 
+		<message mid="1101" name="Invite" dbflag="2"/>
+		<message mid="1102" name="Reply" dbflag="2"/>
+		<message mid="1103" name="Cancel" dbflag="2"/>
+		<message mid="1104" name="Turn" dbflag="2"/>
+		<message mid="1105" name="Join" dbflag="2"/>
+		<message mid="1106" name="Joined" msgtype="2"/>
+		<message mid="1107" name="EnterZone" dbflag="2"/>
+		<message mid="1108" name="Start" dbflag="2"/>
+		<message mid="1109" name="Started" msgtype="2"/>
+		<message mid="1110" name="Ready" dbflag="2"/>
+		<message mid="1111" name="AllReady" msgtype="2"/>
+		<message mid="1112" name="GetPoker" msgtype="2"/>
+		<message mid="1113" name="Restart" dbflag="2"/>
+		<message mid="1114" name="EndMatch" msgtype="2"/>
+		<message mid="1115" name="Register" needloggedin="false"/>
+		<message mid="1116" name="Out" msgtype="2"/>
+		<message mid="1117" name="KickOut" dbflag="2"/>
+		<message mid="1118" name="WaitingAccept" msgtype="2"/>
+
+        
+		<message mid="1122" name="AddFriendByName" dbflag="2" />
+		<message mid="1123" name="UpdateUserInfo" dbflag="2" />
+        
+		<message mid="1129" name="TimeOut" dbflag="2" />
+		<message mid="1130" name="SetMinBet" dbflag="2" />
+         
+		<message mid="1200" name="GetPlayingList" dbflag="1"/>
+		<message mid="1201" name="GetWaitingList" dbflag="1"/>
+		<message mid="1203" name="GetFrientList" dbflag="2"/>
+		<message mid="1204" name="AddFriend" dbflag="1"/>
+		<message mid="1205" name="RemoveFriend" dbflag="1"/>
+		<message mid="1206" name="TransferCash" dbflag="1"/>
+		<message mid="1207" name="GetRichests"  dbflag="1"/>
+		<message mid="1210" name="GetUserInfo" dbflag="1"/>
+		<message mid="1211" name="GetRoomMoney" dbflag="1" />
+        
+		<message mid="1240" name="GetAllRoom"  dbflag="1"/>
+		<message mid="1241" name="EnterRoom"  dbflag="1"/>
+		<message mid="1242" name="ChangeSetting"  dbflag="1"/>
+		<message mid="1246" name="FastPlay"  dbflag="1"/>	
+		<message mid="1247" name="SendMessage"  dbflag="1"/>
+		<message mid="1248" name="ReceiveMessage"  dbflag="1"/>
+
+		<message mid="1252" name="OutPhong"  dbflag="1"/>
+		<message mid="1300" name="Chat" dbflag="1"/>
+		<message mid="1301" name="PrivateChat" dbflag="1"/>
+		
+		<message mid="1504" name="OfflineMessage" needloggedin="true"/>
+		<message mid="1505" name="Logout" needloggedin="true"/>
+		<message mid="1506" name="Charging" needloggedin="true"/>
+		<message mid="1507" name="ReadMessage" needloggedin="true"/>
+
+		<message mid="4000" name="UseCard" dbflag="2"/>
+		<message mid="6000" name="GetOtherPoker" msgtype="2"/>
+
+		<message mid="7039" name="GetOnlineMember" dbflag="2"/>
+        
+		<message mid="7050" name="DeleteItem" dbflag="2"/>
+       
+		<message mid="8001" name="XEGetAllShopItems" dbflag="2"/>
+		<message mid="8002" name="XEGetAllLevelItems" dbflag="2"/>
+		<message mid="8003" name="XEGetTablesByLevel" dbflag="2"/>
+		<message mid="8004" name="XENew" dbflag="2"/>
+		<message mid="8005" name="XEExchangeXeengToGold" dbflag="2" />
+		<message mid="8006" name="XEGetAllNews" dbflag="2" />
+		<message mid="8007" name="XEGetNews" dbflag="2" />
+		<message mid="8008" name="XERemoveSocialFriend" dbflag="2" />
+		<message mid="8009" name="XESendPrivateMessage" dbflag="2" />
+		<message mid="8010" name="XEGetAllPrivateMessages" dbflag="2" />
+		<message mid="8011" name="XEGetPrivateMessage" dbflag="2" />
+		<message mid="8012" name="XEGetAllUserLevels" dbflag="2" />
+		<message mid="8013" name="XEResetPassword" dbflag="2" needloggedin="false" />
+		<message mid="8014" name="XEGetRemainingFreeGold" dbflag="2" />
+		<message mid="8015" name="XEReceiveFreeGold" dbflag="2" />
+		<message mid="8017" name="XEGetInventory" dbflag="2" />
+		<message mid="8018" name="XEUseInventoryItem" dbflag="2" />
+		<message mid="8019" name="XEJoinEventItems" dbflag="2" />
+		<message mid="8020" name="XEGetEventGiftHistory" dbflag="2" />
+		<message mid="8021" name="XENotifyEventItem" msgtype="2" />
+		<message mid="8022" name="XEGetAllInGameEvents" dbflag="2" />
+		<message mid="8023" name="XEGetAllCashShopItems" dbflag="2" />
+		<message mid="8024" name="XEBuyCashShopItem" dbflag="2" />
+		<message mid="8025" name="XEOpenEventCard" dbflag="2" />
+		<message mid="8026" name="XEGetRouletteInfo" dbflag="2" />
+		<message mid="8027" name="XEStartRoulette" dbflag="2" />
+		<message mid="8028" name="XEEndRoulette" dbflag="2" />
+		<message mid="8029" name="XEGetRouletteHistory" dbflag="2" />
+		<message mid="8030" name="XEGetRouletteGuide" dbflag="2" />
+       
+		<message mid="5" name="GetItem" dbflag="2"/>
+		<message mid="7" name="GetPersonInfo" dbflag="2"/>
+
+		<message mid="3" name="Reconnect" needloggedin="false"/>
+        
+		<!-- 14/11/2014 SonNH -->        
+		<!--<message mid="10000" name="XEGetChatMessages" dbflag="2" />-->
+		<!-- 14/11/2014 SonNH -->
+        
+		<message mid="51" name="SendAdv" msgtype="2"/>
+		<message mid="55" name="ZoneCache" msgtype="2"/>
+		<message mid="73" name="GetFriend" dbflag="2"/>
+		<message mid="78" name="GetUserAccount" dbflag="2"/>
+		<message mid="79" name="DeleteMessage" dbflag="2"/>
+		<message mid="83" name="CheckGiftCode" dbflag="2"/>
+                
+		<message mid="8031" name="XEGetAllAds" msgtype="2" />
+        
+		<message mid="109" name="ForgotPassword" needloggedin="false"/>
+		
+	</package>
+    
+	<package package="com.tv.xeeng" name="PackageProtocol" module="" msgpkg="com.tv.xeeng" description="Framework messages">
+		<message mid="9999" name="ExpiredSession" msgtype="2"/>
+	</package>
+    
+</factory>
+
+<!--
+- needloggedin:
+	+ false: no need logged in
+	+ true or missed attribute: need logged in
+- msgtype:
+	+ 1: only require message request
+	+ 2: only require message response
+	+ other or missed attribute: require all
+- dbflag (only be used in msgtype!=2):
+	+ 1: unuse
+	+ 2: non-transaction
+	+ default and other: transaction
+-->
